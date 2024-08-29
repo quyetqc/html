@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/
 
 # Expose port 80 to be able to access the web page
-EXPOSE 80
+EXPOSE 8080
 
 # Start Nginx when the container starts
 CMD ["nginx", "-g", "daemon off;"]
